@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+live link : https://btcprices.netlify.app
+
+portfolio : https://shaontechnical.blogspot.com
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
