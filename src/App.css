@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  margin: 0 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chartBody {
+  width: 60%;
+  margin: 1rem;
+  border: 1px solid grey;
+  padding: 1rem 10px;
+  border-radius: 10px;
+  /* min-width: 425px; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* height: 50vh; */
+}
+.btnSec {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 2rem 3rem;
+  margin: 10px;
+  /* overflow-x: scroll; */
+}
+.topHeading {
+  display: flex;
+  justify-content: center;
+}
+.lineCharts {
+  margin: 1rem;
+}
+button {
+  font-size: 10px !important;
+  margin-left: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .chartBody {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .btnSec {
+    flex-wrap: wrap;
+  }
+  .lineCharts {
+    margin: 1rem 0;
+  }
+}
+.lineCharts canvas {
+  height: 250px;
+  width: 100% !important;
+}
+
+@media (max-width: 440px) {
+  button {
+    font-size: 10px !important;
+  }
+  .btnSec button {
+    margin: 10px;
+  }
+  .MuiButtonGroup-root.MuiButtonGroup-contained.css-zqcytf-MuiButtonGroup-root {
+    flex-wrap: wrap;
+  }
+  .btnSec {
+    padding: 0;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  .chartBody {
+    width: 100%;
+    margin: 0;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .mainChart {
+    margin: 1rem 0;
   }
 }
